@@ -1,7 +1,7 @@
 ## Docker Installation Ansible Playbook
 
 ### Notice
-This Ansible playbook simplifies the Docker installation process on Ubuntu systems.
+This Ansible playbook simplifies the Docker installation process on Linux systems.
 
 - Before running, you must download the Docker files and place them in the ```/etc/ansible/roles/install-docker/files/ubuntu-noble-x68_64/``` path so that it can be installed offline
 - To learn how to get the Docker installation package, refer to the following link
