@@ -1,10 +1,13 @@
-# Installing Docker with Ansible
+# Docker Installation Ansible Playbook
 
 This Ansible playbook simplifies the Docker installation process on Ubuntu systems.
 
+- Before running, you must download the Docker files and place them in the ```/etc/ansible/roles/install-docker/files/ubuntu-noble-x68_64/``` path so that it can be installed offline
+- To learn how to get the Docker installation package, refer to the following link
+https://github.com/mojtabco/docker-package-download
+
 ## Overview
 
-### Roles 
 The playbook performs the following tasks:
 
 - Updates the apt package cache.
@@ -12,6 +15,7 @@ The playbook performs the following tasks:
 - Installs Docker packages.
 - Deletes the temporary Docker files directory post-installation.
 
+### Roles 
 ```yml
 # roles/install-docker/tasks/main.yml
 ---
@@ -56,7 +60,7 @@ In summary, this Ansible configuration targets hosts in the [db] group, escalate
   roles:
     - role: install-docker
 ```
-### Ansible configuration file
+###Ansible configuration file
 ```
 [defaults]
 inventory      = ./inventory/main.yml
