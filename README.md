@@ -50,7 +50,7 @@ The playbook performs the following tasks:
 In summary, this Ansible configuration targets hosts in the [db] group, escalates privileges to the root user, uses root as the password for privilege escalation (though not recommended), and includes the install-docker role to perform the Docker installation tasks.
 
 ```yml
-#playbooks/install-docker.yml
+# playbooks/install-docker.yml
 ---
 - hosts: db
   become: yes
