@@ -56,7 +56,7 @@ In summary, this Ansible configuration targets hosts in the [db] group, escalate
   become: yes
   become_user: root
   vars:
-    ansible_become_pass: root
+    ansible_become_pass: p@ssw0rd
   roles:
     - role: install-docker
 ```
